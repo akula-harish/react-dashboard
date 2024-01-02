@@ -1,12 +1,10 @@
-
 import './App.css'
+import Navibar from './componets/Navibar/Navibar'
 
 function App() {
-
-
   return (
     <>
-     <p>something</p>
+     <Navibar/>
     </>
   )
 }

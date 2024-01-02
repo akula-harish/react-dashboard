@@ -1,9 +1,10 @@
-import Header from "./componets/Header/Header"
+
+import './App.css'
 
 function App() {
   return (
     <>
-    <Header />
+     <p>something</p>
     </>
   )
 }

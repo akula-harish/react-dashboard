@@ -1,0 +1,7 @@
+.body_main{
+    position: relative;
+    width: calc(100% - 250px);
+    padding-top: 60px;
+    left: 250px;
+    right: 0px;
+}

@@ -7,6 +7,7 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import ChatIcon from '@mui/icons-material/Chat';
 import img from '../../assets/men.jfif';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import "./Header.css" 
 function Header() {
   return (
     <div className='main_header'>

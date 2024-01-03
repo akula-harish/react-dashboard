@@ -1,15 +1,9 @@
-
-import './App.css'
-import Header from './componets/Header/Header'
-import Navibar from './componets/Navibar/Navibar'
+import Home from "./componets/Home/Home"
 
 function App() {
   return (
     <>
-    <div>
-    <Header/>
-    <Navibar/>
-    </div>
+      <Home/>
     </>
   )
 }

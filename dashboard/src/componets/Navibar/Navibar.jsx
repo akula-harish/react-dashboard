@@ -34,6 +34,12 @@ export default function Navibar() {
                         <li><KeyboardArrowDownIcon/></li>
                     </ul>
                </a>
+               <div className='nav_bar_child_list_main'>
+                    <ul className='nav_bar_child_list'>
+                        <li><a href='#'>Alerts</a></li>
+                        <li><a href='#'>Accordian</a></li>
+                    </ul>
+                </div>
             </li>
             <li>
                <a href='#' className='nav_icon_text'>
@@ -43,6 +49,12 @@ export default function Navibar() {
                         <li><KeyboardArrowDownIcon/></li>
                     </ul>
                </a>
+               <div className='nav_bar_child_list_main'>
+                    <ul className='nav_bar_child_list'>
+                        <li><a href='#'>Form Elements</a></li>
+                        <li><a href='#'>Form Layouts</a></li>
+                    </ul>
+                </div>
             </li>
             <li>
                <a href='#' className='nav_icon_text'>
@@ -52,6 +64,12 @@ export default function Navibar() {
                         <li><KeyboardArrowDownIcon/></li>
                     </ul>
                </a>
+               <div className='nav_bar_child_list_main'>
+                    <ul className='nav_bar_child_list'>
+                        <li><a href='#'>General Tables</a></li>
+                        <li><a href='#'>Table Layouts</a></li>
+                    </ul>
+                </div>
             </li>
             <li>
                <a href='#' className='nav_icon_text'>
@@ -61,6 +79,12 @@ export default function Navibar() {
                         <li><KeyboardArrowDownIcon/></li>
                     </ul>
                </a>
+               <div className='nav_bar_child_list_main'>
+                    <ul className='nav_bar_child_list'>
+                        <li><a href='#'>Charts Elements</a></li>
+                        <li><a href='#'>Charts Layouts</a></li>
+                    </ul>
+                </div>
             </li>
             <li>
                <a href='#' className='nav_icon_text'>
@@ -70,6 +94,12 @@ export default function Navibar() {
                         <li><KeyboardArrowDownIcon/></li>
                     </ul>
                </a>
+               <div className='nav_bar_child_list_main'>
+                    <ul className='nav_bar_child_list'>
+                        <li><a href='#'>Icon Elements</a></li>
+                        <li><a href='#'>Icon Layouts</a></li>
+                    </ul>
+                </div>
             </li>
             <h5 className='nav_header_text'>Pages</h5>
             <li>

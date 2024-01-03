@@ -18,7 +18,7 @@ import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 
 export default function Navibar() {
   return (
-    <div className='nav_list_main'>
+    <div>
         <ul className='nav_list'>
             <li>
                <a href='/' className='nav_icon_text'>

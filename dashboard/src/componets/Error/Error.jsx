@@ -1,4 +1,5 @@
 import React from 'react'
+import "../Dashboard/dashboard.css"
 
 export default function Error() {
   return (

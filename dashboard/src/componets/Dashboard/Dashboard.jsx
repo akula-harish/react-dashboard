@@ -11,17 +11,19 @@ export default function Dashboard() {
       fetchData();
     }, []);
     return (
-      <div className='body_main'>
-          {
-            data.map((item)=>{
-              return(
-                <div className='card_head' key={item.id}>
-                <li>{item.title}</li>
-                <li>{item.description}</li>
-                </div>
-              )
-            })
-          }
-      </div>
+        <ul className='dashboard_main'>
+            {
+                data.map((item) => {
+                    return(
+                        <li key={item.id} className='card_head'>
+                            <h2>{item.brand}</h2>
+                            <h3>{item.price}</h3>
+                            <h4>{item.rating}</h4>
+                            <h5>{item.title}</h5>
+                        </li>
+                    )
+                })
+            }
+        </ul>
     )
   }

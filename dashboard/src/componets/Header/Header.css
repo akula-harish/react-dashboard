@@ -1,39 +1,71 @@
 .nice_header{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
+   
+    font-size: 14px; */
+    width: 100%;
+    position: relative;
+    font-size: 0px;
     padding: 8px 10px;
-    font-size: 14px;
 }
 .nice_left_header{
-    flex: 1;
+    width: 25%;
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
 }
 .nice_middle_header{
-    flex:2;
+    width: 50%;
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
 }
 .nice_right_header{
-    flex: 1;
+    width: 25%;
+    display: inline-block;
+    font-size: 14px;
+    text-align: right;
+    vertical-align: middle;
 }
 .searchbar{
     position: relative;
     margin-left: 10px;
     color: #a79b9b;
+    /* display: inline-block; */
+}
+.search_content{
+    width: 100%;
+    position: relative;
+    font-size: 0px;
+}
+.search_content >svg{
+    display: inline-block;
+    font-size: 14px;
+}
+.search_content>li:first-child{
+    width: 5%;
+}
+.search_content>li:last-child{
+    width: 95%;
+}
+.search_content>li{
+    display: inline-block;
+    vertical-align: middle;
 }
 .search_icon{
     position: absolute;
-    right: 0px;
-    top:5px
+    right: 46%;
+    top:7px
 }
 .searchbar >input{
     height: 35px;
     border-radius: 4px;
     border: 1px solid #ccc;
     padding: 5px 10px;
-    
-}
-.search_content{
-    display: flex;
-    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    width: 55%;
 }
 .right_iocn{
     font-size: 28px !important;
@@ -45,11 +77,11 @@
     border-radius: 50%;
     border: 1px solid #ccc;
     margin-right: 10px;
+    display: inline-block;
 }
 .right_cont{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    vertical-align: middle;
 }
 .logo{
     color: #012970;
@@ -62,11 +94,13 @@
 .right_img >p{
     color: #012970;
     font-size: large;
+    display: inline-block;
 }
 .right_img{
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    vertical-align: middle;
 }
+
 .main_header{
     position: fixed;
     font-size: 0px;
@@ -81,6 +115,20 @@
     display: flex;
     align-items: center;
 }
+.logo_content >h3{
+    font-size: 26px;
+}
 .logo_content >img{
     width: 26px;
+}
+/* pop up css */
+.popup_nft{
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 15%;
+    width: 150px;
+    top: 39px;
+    background: #fff;
+    padding: 5px;
+    font-size: 14px;
 }

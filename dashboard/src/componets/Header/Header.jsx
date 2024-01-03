@@ -8,24 +8,28 @@ import ChatIcon from '@mui/icons-material/Chat';
 import img from '../../assets/men.jfif';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import "./Header.css" 
+
 function Header() {
+  
   return (
     <div className='main_header'>
       <header className='nice_header'>
         <div className='nice_left_header'>
             <div className='logo_content'>
                 <img src={images} className='w-[26px]'/>
-                <h3 className='text-2xl capitalize font-bold logo'>Nice admin</h3>
+                <h3 className='capitalize font-bold logo'>Nice admin</h3>
             </div>
         </div>
         <div className='nice_middle_header'>
-            <div className='search_content'>
-                <MenuIcon className='menu_icon'/>
-                <div className='searchbar'>
-                    <SearchIcon className='search_icon'/>
-                    <input type='text' placeholder='Search'/>
-                </div>
-            </div>
+            <ul className='search_content'>
+                <li><MenuIcon className='menu_icon'/></li>
+                <li>
+                    <div className='searchbar'>
+                      <SearchIcon className='search_icon'/>
+                      <input type='text' placeholder='Search'/>
+                  </div>
+                </li>
+            </ul>
         </div>
         <div className='nice_right_header'>
             <div className='right_cont'>
@@ -37,6 +41,10 @@ function Header() {
                 <ArrowDropDownIcon />
                </div>
             </div>
+        </div>
+        {/* pop up messsages */}
+        <div className='popup_nft'>
+          <p>Lorem ipsum, dolor sit , minus nesciunt excepturi cupiditate facere consequatur. Vel, aliquam unde laborum ea non animi vero reiciendis dolor.</p>
         </div>
       </header>
     </div>

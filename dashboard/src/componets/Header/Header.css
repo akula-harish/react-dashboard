@@ -10,13 +10,13 @@
     padding: 8px 10px;
 }
 .nice_left_header{
-    width: 25%;
+    width: 20%;
     display: inline-block;
     font-size: 14px;
     vertical-align: middle;
 }
 .nice_middle_header{
-    width: 50%;
+    width: 55%;
     display: inline-block;
     font-size: 14px;
     vertical-align: middle;
@@ -93,7 +93,6 @@
 }
 .right_img >p{
     color: #012970;
-    font-size: large;
     display: inline-block;
 }
 .right_img{
@@ -131,4 +130,8 @@
     background: #fff;
     padding: 5px;
     font-size: 14px;
+    display: none;  
+}
+#myDIV{
+    
 }

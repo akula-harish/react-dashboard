@@ -12,7 +12,7 @@ function Header() {
     <div className='main_header'>
       <header className='nice_header'>
         <div className='nice_left_header'>
-            <div className='flex align-middle'>
+            <div className='logo_content'>
                 <img src={images} className='w-[26px]'/>
                 <h3 className='text-2xl capitalize font-bold logo'>Nice admin</h3>
             </div>

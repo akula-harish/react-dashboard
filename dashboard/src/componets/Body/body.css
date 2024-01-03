@@ -1,0 +1,21 @@
+.body_main{
+    position: relative;
+    width: calc(100% - 250px);
+    padding: 80px 30px 20px 30px;
+    left: 250px;
+    right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    
+}
+.card_head{
+    border: 1px solid #ccc;
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 8px;
+}
+.card_head >li{
+    list-style-type: none;
+}

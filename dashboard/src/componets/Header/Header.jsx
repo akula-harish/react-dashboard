@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../componets/Header/Header.css'
 import images from '../../assets/logo.png';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';

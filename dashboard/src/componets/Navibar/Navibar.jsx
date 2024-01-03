@@ -21,7 +21,7 @@ export default function Navibar() {
     <div className='nav_list_main'>
         <ul className='nav_list'>
             <li>
-               <a href='#' className='nav_icon_text'>
+               <a href='/' className='nav_icon_text'>
                     <GridViewIcon className='nav_icon'/>
                     <p className='nav_text'>Dashboard</p>
                </a>
@@ -133,7 +133,7 @@ export default function Navibar() {
                </a>
             </li>
             <li>
-                <a href='#' className='nav_icon_text'>
+                <a href='error' className='nav_icon_text'>
                     <ReportIcon className='nav_icon'/>
                     <p className='nav_text'>Error 404</p>
                </a>

@@ -26,3 +26,6 @@
 .card_head>h4{
     font-size: 40px;
 }
+.nav_bar_child_list_main.active{
+    display: block;
+}

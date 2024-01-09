@@ -8,3 +8,18 @@
     flex-wrap: wrap;
     gap:10px;
 }
+:root {
+    --text-color: black;
+    --background-color: white;
+  }
+  
+  [data-theme="dark"] {
+    --text-color: #000;
+    --background-color: black;
+  }
+  
+  body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+

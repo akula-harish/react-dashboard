@@ -1,9 +1,4 @@
 .nice_header{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    font-size: 14px; */
     width: 100%;
     position: relative;
     font-size: 0px;
@@ -16,13 +11,13 @@
     vertical-align: middle;
 }
 .nice_middle_header{
-    width: 55%;
+    width: 50%;
     display: inline-block;
     font-size: 14px;
     vertical-align: middle;
 }
 .nice_right_header{
-    width: 25%;
+    width: 30%;
     display: inline-block;
     font-size: 14px;
     text-align: right;
@@ -52,6 +47,7 @@
 .search_content>li{
     display: inline-block;
     vertical-align: middle;
+    font-size: 14px;
 }
 .search_icon{
     position: absolute;
@@ -70,6 +66,7 @@
 .right_iocn{
     font-size: 28px !important;
     margin: 0px 10px;
+    color: #000;
 }
 .img_icon{
     width: 25px;
@@ -80,7 +77,13 @@
     display: inline-block;
 }
 .right_cont{
+    font-size: 0px;
+    width: 100%;
+    position: relative;
+}
+.right_cont >li{
     display: inline-block;
+    font-size: 14px;
     vertical-align: middle;
 }
 .logo{
@@ -99,7 +102,9 @@
     display: inline-block;
     vertical-align: middle;
 }
-
+.right_img >svg{
+    color: #000;
+}
 .main_header{
     position: fixed;
     font-size: 0px;
@@ -121,17 +126,87 @@
     width: 26px;
 }
 /* pop up css */
-.popup_nft{
-    border: 1px solid #ccc;
-    position: absolute;
-    right: 15%;
-    width: 150px;
-    top: 39px;
-    background: #fff;
-    padding: 5px;
+.data-container {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .hide {
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
+  }
+  .show {
+    opacity: 1;
+    pointer-events: auto;
+    height: auto;
+    overflow: visible;
     font-size: 14px;
-    display: none;  
+    position: absolute;
+    right: 10%;
+    width: 150px;
+    top: 60px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 9px;
+    border: 1px solid #ccc;
+  }
+  .ntf_icon{
+    font-size: 28px !important;
+    color: #000;
 }
-#myDIV{
-    
+.dark{
+    background-color:#000;
 }
+ .toggle-theme {
+    position: relative;
+    display: inline-block;
+    height: 28px;
+    width: 45px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .toggle-theme input {
+    display: none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    position: absolute;
+    cursor: pointer;
+    bottom: 0;
+    left: -4px;
+    right: -3px;
+    top: 0;
+    transition: 0.2s;
+  }
+  
+  .slider:before {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeyTUQrD3iinwYO4dMQT-obXZkt5AycuRTbO4T8Xlr-LSTloSj69PMXvVQvFw4PHu8Kfk&usqp=CAU');
+    bottom: 4px;
+    content: "";
+    height: 20px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  input:checked + .slider {
+    background-color: #000;
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

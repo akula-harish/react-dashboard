@@ -1,3 +1,19 @@
+@import '../../../theme.json';
+:root {
+    --text-color: black;
+    --background-color: white;
+    --logo-color: #012970;
+  }
+  
+  [data-theme="dark"] {
+    --text-color: #fff;
+    --background-color: #000;
+    --logo-color: #fff;
+  }
+  .main_header {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
 .nice_header{
     width: 100%;
     position: relative;
@@ -66,7 +82,7 @@
 .right_iocn{
     font-size: 28px !important;
     margin: 0px 10px;
-    color: #000;
+    color: var(--text-color);
 }
 .img_icon{
     width: 25px;
@@ -87,15 +103,15 @@
     vertical-align: middle;
 }
 .logo{
-    color: #012970;
+    color:  var(--logo-color);
     margin-left: 10px;
 }
 .menu_icon{
     font-size: 32px !important;
-    color: #012970;
+    color: var(--text-color);
 }
 .right_img >p{
-    color: #012970;
+    color:var(--text-color);
     display: inline-block;
 }
 .right_img{
@@ -103,7 +119,7 @@
     vertical-align: middle;
 }
 .right_img >svg{
-    color: #000;
+    color: var(--text-color);
 }
 .main_header{
     position: fixed;
@@ -113,7 +129,8 @@
     z-index: 999;
     box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
     height: 60px;
-    background-color: #fff;
+    /* background-color: #fff; */
+    
 }
 .logo_content{
     display: flex;
@@ -153,7 +170,7 @@
   }
   .ntf_icon{
     font-size: 28px !important;
-    color: #000;
+    color: var(--text-color);;
 }
 .dark{
     background-color:#000;
@@ -200,7 +217,7 @@
   }
   
   input:checked + .slider {
-    background-color: #000;
+    background-color: var(--text-color);
   }
   
   .slider.round {

@@ -8,14 +8,23 @@ import img from '../../assets/men.jfif';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import "./Header.css" ;
 import Darkmode from './Darkmode';
+import theme from '../../../theme.json'
 function Header() {
 
   const [showData, setShowData] = useState(false);
   const toggleData = () => {
     setShowData(!showData);
   };
+  // const sometheme={
+  //   pricolor:"yellow",
+  //   seccolor:"green"
+  // };
+  //console.log(JSON.stringify(sometheme))
+  console.log(theme,"json")
   return (
-    <div className='main_header'>
+    <div className='main_header' 
+    //style={{background:theme.pricolor}}
+    >
       <header className='nice_header'>
         <div className='nice_left_header'>
             <div className='logo_content'>

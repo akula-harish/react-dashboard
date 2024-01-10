@@ -33,21 +33,21 @@ export default function Navibar() {
                 menuItemStyles={{
                 button: {
                     [`&.active`]: {
-                    backgroundColor: '#13395e',
+                    backgroundColor: 'red',
                     color: '#012970',
                     },
                 },
                 }}
             >
                 <MenuItem className={classes.menuItem} href='/dashboard'><GridViewIcon/> Dashboard</MenuItem>
-                <SubMenu label = {`${<LayersIcon/>} Components`} className={classes.subMenu}>
-                    <MenuItem>Alerts</MenuItem>
-                    <MenuItem>Accordian</MenuItem>
-                    <MenuItem>Badges</MenuItem>
+                <SubMenu label = {`${<LayersIcon/>} Components`} className={`${classes.subMenu}menuItem test`}>
+                    <MenuItem className={`${classes.subMenu}menuItem`}>Alerts</MenuItem>
+                    <MenuItem className={`${classes.subMenu}menuItem`}>Accordian</MenuItem>
+                    <MenuItem className={`${classes.subMenu}menuItem`}>Badges</MenuItem>
                     <MenuItem>Buttons</MenuItem>
                     <MenuItem>Cards</MenuItem>
                 </SubMenu>
-                <SubMenu label = 'Forms' className={classes.subMenu}>
+                <SubMenu label = 'Forms' className={`${classes.subMenu}menuItem`}>
                     <MenuItem>Alerts</MenuItem>
                     <MenuItem>Accordian</MenuItem>
                     <MenuItem>Badges</MenuItem>

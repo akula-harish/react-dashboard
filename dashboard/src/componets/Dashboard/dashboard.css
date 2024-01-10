@@ -1,3 +1,4 @@
+@import '../Body/body.css';
 .dashboard_main{
     position: relative;
     width: 100%;
@@ -19,8 +20,9 @@
     padding: 10px;
     border-radius: 8px;
     font-size: 20px;
-    background-color: #fff;
+    /* background-color: #fff; */
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: var(--text-color);
 }
 .card_head>h2{
     font-size: 16px;

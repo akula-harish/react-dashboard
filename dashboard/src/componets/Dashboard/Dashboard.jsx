@@ -15,7 +15,7 @@ export default function Dashboard() {
             {
                 data.map((item) => {
                     return(
-                        <li key={item.id} className='card_head'>
+                        <li key={item.id} className='card_head' data-aos="zoom-in">
                             <h2>{item.brand}</h2>
                             <h3>{item.price}</h3>
                             <h4>{item.rating}</h4>

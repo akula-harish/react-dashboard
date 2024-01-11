@@ -40,7 +40,7 @@ export default function Navibar() {
                 }}
             >
                 <MenuItem className={classes.menuItem} href='/dashboard'><GridViewIcon/> Dashboard</MenuItem>
-                <SubMenu label = {`${<LayersIcon/>} Components`} className={`${classes.subMenu}menuItem test`}>
+                <SubMenu label = 'Components' className={`${classes.subMenu}menuItem test`}>
                     <MenuItem className={`${classes.subMenu}menuItem`}>Alerts</MenuItem>
                     <MenuItem className={`${classes.subMenu}menuItem`}>Accordian</MenuItem>
                     <MenuItem className={`${classes.subMenu}menuItem`}>Badges</MenuItem>

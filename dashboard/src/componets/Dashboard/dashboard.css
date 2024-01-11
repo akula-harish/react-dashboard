@@ -9,11 +9,11 @@
     vertical-align: middle;
     margin: 8px;
 }
-.dashboard_main>li:hover{
+/* .dashboard_main>li:hover{
     transform: scaleY(1.1);
     transition: 1s;
     cursor: pointer;
-}
+} */
 .card_head{
     border: 1px solid #ccc;
     width: 250px;

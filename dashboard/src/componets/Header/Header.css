@@ -163,10 +163,11 @@
     right: 10%;
     width: 150px;
     top: 60px;
-    /* background-color: #fff; */
+    background-color:var(--background-color);
     padding: 5px;
     border-radius: 9px;
     border: 1px solid #ccc;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
   }
   .ntf_icon{
     font-size: 28px !important;

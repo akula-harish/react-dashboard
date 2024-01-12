@@ -1,3 +1,4 @@
+
 .nav_icon_text{
     @apply flex items-center space-x-2
 }
@@ -15,13 +16,12 @@
     position: fixed;
     left: 0;
     z-index: 1;
-    box-shadow: 0px 1px 0px 1px #ccc;
+    /* box-shadow: 0px 1px 0px 1px #ccc; */
     height: 100%;
     width: 250px;
-    background-color: #fff;
-    padding: 10px;
-    margin-top: 60px;
     overflow-x: scroll;
+    margin-top: 60px;
+    /* background: var(--background-color); */
 }
 .nav_header_text{
     color: #899bbd;
@@ -61,7 +61,7 @@
 
 .nav_bar_child_list_main{
     padding-left: 60px;
-    display: none;
+    /* display: none; */
 }
 .nav_bar_child_list{
     font-size: 0px;
@@ -72,7 +72,10 @@
     list-style:circle;
     padding-bottom: 4px;
 }
-
-
-
-
+.sidebar_main >div{
+  background: none;
+  height: 100%;
+}
+.sidebar_main:hover{
+    background: none !important;
+}

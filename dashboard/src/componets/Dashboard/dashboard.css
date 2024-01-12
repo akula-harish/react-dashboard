@@ -1,0 +1,43 @@
+@import '../Body/body.css';
+.dashboard_main{
+    position: relative;
+    width: 100%;
+    font-size: 0px;
+}
+.dashboard_main>li{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 8px;
+}
+/* .dashboard_main>li:hover{
+    transform: scaleY(1.1);
+    transition: 1s;
+    cursor: pointer;
+} */
+.card_head{
+    border: 1px solid #ccc;
+    width: 250px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    /* background-color: #fff; */
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: var(--text-color);
+}
+.card_head>h2{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.card_head>h3{
+    font-size: 12px;
+}
+.card_head>h4{
+    font-size: 14px;
+    padding: 5px 0px;
+}
+.card_head>h5{
+    font-size: 12px;
+}
+.nav_bar_child_list_main.active{
+    display: block;
+}

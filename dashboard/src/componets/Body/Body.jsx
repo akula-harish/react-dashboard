@@ -7,8 +7,8 @@ export default function Body() {
   return (
     <BrowserRouter>
         <Routes>
-            <Route path = "/" element = {<Dashboard/>}/>
-            <Route path = 'error' element = {<Error/>}/>
+            <Route path = "/dashboard" element = {<Dashboard/>}/>
+            <Route path = "/error" element = {<Error/>}/>
         </Routes>
     </BrowserRouter>
   )

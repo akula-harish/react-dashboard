@@ -41,3 +41,7 @@
 .nav_bar_child_list_main.active{
     display: block;
 }
+
+[data-theme="dark"]{
+    box-shadow: 0px 0px 5px 0px #fff;
+}

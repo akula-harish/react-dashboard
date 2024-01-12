@@ -76,6 +76,14 @@
   background: none;
   height: 100%;
 }
-.sidebar_main:hover{
+/* .sidebar_main:hover{
     background: none !important;
+} */
+
+.submenu_list>MenuItem{
+    color: red!important
 }
+
+
+
+

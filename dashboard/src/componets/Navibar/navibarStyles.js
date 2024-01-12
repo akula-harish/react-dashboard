@@ -12,10 +12,10 @@ export const NavibarStyles = () =>
         },
         menuItem: {
             color:' var(--text-color)',
-            fontSize: '14px',
-           
+            fontSize: '14px',    
         },
-        // test:{
-        //     background:'var(--background-color)'!important,
-        // }
+        submenu_list: {
+            background:'var(--background-color)',
+            fontSize: '14px',
+        }
     })

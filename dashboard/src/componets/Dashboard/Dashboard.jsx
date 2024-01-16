@@ -15,6 +15,7 @@ export default function Dashboard() {
             {
                 data.map((item) => {
                     return(
+                        <li key={item.id} className='card_head' data-aos="zoom-in">
                         <li key={item.id} className='card_head' data-aos="zoom-in" data-theme="dark">
                             <h2>{item.brand}</h2>
                             <h3>{item.price}</h3>

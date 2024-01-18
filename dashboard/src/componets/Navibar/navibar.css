@@ -23,6 +23,9 @@
     margin-top: 60px;
     /* background: var(--background-color); */
 }
+.nav_list_main_toggle{
+    background-color: red;
+}
 .nav_header_text{
     color: #899bbd;
     font-size: 14px;

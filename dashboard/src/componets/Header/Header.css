@@ -101,6 +101,8 @@
     display: inline-block;
     font-size: 14px;
     vertical-align: middle;
+    padding-right: 8px;
+    cursor: pointer;
 }
 .logo{
     color:  var(--logo-color);
@@ -164,6 +166,7 @@
     width: 150px;
     top: 60px;
     background-color:var(--background-color);
+    /* background-color: #fff; */
     padding: 5px;
     border-radius: 9px;
     border: 1px solid #ccc;
@@ -215,6 +218,10 @@
   
   input:checked + .slider:before {
     transform: translateX(26px);
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHhVw8VnokAzmjy8byhiQQexBP945QwLjFQA&usqp=CAU');
+    width: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
   }
   
   input:checked + .slider {
@@ -227,4 +234,12 @@
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  .chatbox_main{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    padding: 10px;
   }

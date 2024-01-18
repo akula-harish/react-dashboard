@@ -23,6 +23,9 @@
     margin-top: 60px;
     /* background: var(--background-color); */
 }
+.nav_list_main_toggle{
+    background-color: red;
+}
 .nav_header_text{
     color: #899bbd;
     font-size: 14px;
@@ -76,6 +79,14 @@
   background: none;
   height: 100%;
 }
-.sidebar_main:hover{
+/* .sidebar_main:hover{
     background: none !important;
+} */
+
+.submenu_list>MenuItem{
+    color: red!important
 }
+
+
+
+

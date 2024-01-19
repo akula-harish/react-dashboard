@@ -18,6 +18,16 @@ export default function Chat({showChatBox}) {
         setMessages([...messages, data])
     }
 
+    //let some = Object.values(data)
+    // if(some){
+    //     some.addEventListener("keypress", function(event){
+    //         if(event.key === "Enter"){
+    //             event.preventDefault();
+    //             inputData.click();
+    //         }
+    //     })
+    // }
+
   
   return (
     <>
@@ -44,3 +54,4 @@ export default function Chat({showChatBox}) {
     </>
   )
 }
+

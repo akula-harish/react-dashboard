@@ -1,0 +1,112 @@
+.reg_main{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+.title_logo{
+    position: relative;
+    width: 100%;
+    font-size: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.title_logo>li{
+    display: inline-block;
+    vertical-align: middle;
+}
+.title_logo>li:first-child>img{
+    width: 22px;
+}
+.title_logo>li:last-child{
+    font-size: 20px;
+    padding-left: 5px;
+    font-weight: 600;
+    color: #012970;
+}
+.reg_form_main{
+    border: 1px solid #fff;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px 0px #fff;
+    padding: 15px 20px;
+}
+.reg_form_main>h2{
+    font-size: 20px;
+    color: #012970;
+    font-weight: 600;
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+}
+.reg_form_main>p{
+    font-size: 14px;
+    color: #303030;
+}
+.form_group_list{
+    position: relative;
+    width: 100%;
+    font-size: 0px;
+    padding-bottom: 15px;
+}
+.form_group_list>li{
+    display: inline-block;
+    vertical-align: middle;
+}
+.form_group_list>li:first-child{
+    width: 35%;
+}
+.form_group_list>li:last-child{
+    width: 65%;
+}
+.form_group_list>li>label{
+    font-size: 15px;
+    color: #303030;
+}
+.form_group_list>li>input{
+    height: 25px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #000;
+    padding: 0px 5px;
+}
+.agree_btn_list{
+    position: relative;
+    width: 100%;
+    font-size: 0px;
+}
+.agree_btn_list>li{
+    display: inline-block;
+    vertical-align: middle;
+}
+.agree_btn_list>li:first-child{
+    width: 10%;
+}
+.agree_btn_list>li:last-child{
+    width: 90%;
+}
+.agree_btn_list>li>label{
+    font-size: 14px;
+    color: #505050;
+}
+.agree_btn_list>li>input{
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+.reg_form_main>form>input{
+    height: 35px;
+    width: 100%;
+    border: 1px solid #0561ff;
+    margin: 15px 0px;
+    background-color: #0561ff;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.reg_form_main>form>p{
+    font-size: 14px;
+    color: #000;
+}

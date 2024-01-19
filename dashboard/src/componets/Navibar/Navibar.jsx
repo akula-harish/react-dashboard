@@ -79,7 +79,7 @@ export default function Navibar() {
                 <MenuItem className={classes.menuItem} icon = {<ExtensionIcon/>}>Profile</MenuItem>
                 <MenuItem className={classes.menuItem} icon = {<AccessibilityIcon/>}>F.A.Q</MenuItem>
                 <MenuItem className={classes.menuItem} icon = {<QuestionMarkIcon/>}>Contact</MenuItem>
-                <MenuItem className={classes.menuItem} icon = {<MailOutlineIcon/>}>Register</MenuItem>
+                <MenuItem className={classes.menuItem} icon = {<MailOutlineIcon/>} href='./Register'>Register</MenuItem>
                 <MenuItem className={classes.menuItem} icon = {<HowToRegIcon/>}>Login</MenuItem>
                 <MenuItem className={classes.menuItem} href='/error' icon = {<ExitToAppIcon/>}>Error</MenuItem>
                 <MenuItem className={classes.menuItem} icon = {<ReportIcon/>}>Blank</MenuItem>

@@ -16,18 +16,14 @@ export default function Chat({showChatBox}) {
 
     const inputData = () => {
         setMessages([...messages, data])
+        setData("")
     }
 
-    //let some = Object.values(data)
-    // if(some){
-    //     some.addEventListener("keypress", function(event){
-    //         if(event.key === "Enter"){
-    //             event.preventDefault();
-    //             inputData.click();
-    //         }
-    //     })
-    // }
-
+    const enter=(event)=> {
+        if (event.keyCode === 13) {
+            inputData();
+        }
+    }
   
   return (
     <>
@@ -44,7 +40,7 @@ export default function Chat({showChatBox}) {
                         }
                     </ul>
                     <ul className={classes.form_list}>
-                        <li><input type='text' value={data} onChange={initialData} placeholder='Enter Message Here' className={classes.form_input}/></li>
+                        <li><input type='text' value={data} onChange={initialData} placeholder='Enter Message Here' className={classes.form_input} onKeyDown={(e) => enter(e) }/></li>
                         <li><Button className={classes.send_btn} onClick={inputData}>Send</Button></li>
                     </ul>
                 </div>

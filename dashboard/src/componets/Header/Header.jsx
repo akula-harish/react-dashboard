@@ -5,33 +5,39 @@ import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import ChatIcon from '@mui/icons-material/Chat';
 import img from '../../assets/men.jfif';
+import camera from '../../assets/camera.jpg'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import "./Header.css" ;
 import Darkmode from './Darkmode';
 import theme from '../../../theme.json'
 import Chat from '../Chat/Chat';
-
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
+import ErrorOutlineOutlinedIcon from '@mui/icons-material/ErrorOutlineOutlined';
+import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
+import CameraAltIcon from '@mui/icons-material/CameraAlt';
+import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
 function Header() {
+  // notification function
   const [showData, setShowData] = useState(false);
   const toggleData = () => {
     setShowData(!showData);
   };
-  // const sometheme={
-  //   pricolor:"yellow",
-  //   seccolor:"green"
-  // };
-  //console.log(JSON.stringify(sometheme))
-  // console.log(theme,"json")
-
+// menu toggle function
   let [openClose, setOpenClose] = useState(true);
   const menuToggle = () => {
     return(setOpenClose(!openClose))
   }
-  
+  // chat box function
   const [showChatBox, setShowChatBox] = useState(false);
   const chatToggle = () => {
     setShowChatBox(!showChatBox);
   };
+  // profile data
+  const [profile,setProfile]=useState(false);
+  const profileFun=()=>{
+    setProfile(!profile)
+  }  
   return(
     <>
       <div className='main_header' 
@@ -63,11 +69,81 @@ function Header() {
              <li><NotificationsNoneIcon onClick={toggleData} className='ntf_icon'/></li>
                 <li><ChatIcon onClick={chatToggle} className='right_iocn'/></li>
               <li> 
-                <div className='right_img'>
+                <div className='right_img' onClick={profileFun}>
                <img src={img} className='img_icon'/>
                <p>Jhon Admin</p>
                 <ArrowDropDownIcon />
-               </div></li>
+               </div>
+               </li>
+               {/* profile data content */}
+               {
+                profile && (
+                  <div className='profile_head'>
+                  <div className='profile_img'>
+                    <img src={img} />
+                    <div className='camera'>
+                      <CameraAltOutlinedIcon />
+                    </div>
+                  </div>
+                  <div className='profile_content_head'>
+                    <ul className='caller_id'>
+                      <li>
+                        <div className='test_data'>
+                        <PersonOutlineIcon className='caller_icon'/>
+                        </div>
+                      </li>
+                      <li>
+                        <div className='caption'>
+                        <p className='color_name'>Name</p>
+                       <p>Rukmini</p>
+                        <p className='color_name' style={{fontSize: '12px'}}>Lorem ipsum Lor imb Lorem ipsum</p>
+                      </div>
+                    
+                      </li>
+                     {/*  */}
+                     <li>
+                      <div> <EditOutlinedIcon className='edit_icon' /></div> 
+                      </li>
+                    </ul>
+                    <ul className='caller_id'>
+                      <li> 
+                        <div className='test_data'>
+                          <ErrorOutlineOutlinedIcon className='caller_icon'/>
+                          </div>
+                          </li>
+                      <li>
+                        <div className='caption'>
+                        <p className='color_name'>About</p>
+                        <p>Busy</p>
+                      </div>
+                      </li>
+                     <li> 
+                      <div>
+                      <EditOutlinedIcon className='edit_icon'/>
+                      </div>
+                     </li>
+                    </ul>
+                    <ul className='caller_id'>
+                      <li>
+                      <div className='test_data'>
+                        <CallOutlinedIcon className='caller_icon'/>
+                        </div>
+                        </li>
+                      <li>
+                        <div className='caption'>
+                        <p className='color_name'>Phone</p>
+                        <p>34567899888</p>
+                      </div>
+                      </li>
+                      <li>
+                        <div></div>
+                      </li>
+                    </ul>
+                  </div>
+               </div>
+                )
+               }
+               
             </ul>
         </div>
         {/* pop up messsages */}

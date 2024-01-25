@@ -280,6 +280,10 @@
 .caption{
   text-align: left;
 }
+.caption >input{
+  background-color: #000;
+  color: #fff;
+}
 .edit_icon{
   color: #28c7ac;
   text-align: end;
@@ -332,4 +336,17 @@
 }
 .caller_id>li:nth-child(3){
   width: 10%;
+}
+.edit_input{
+  display: flex;
+  align-items: center;
+   justify-content: space-between;
+   width:200px;
+   border-radius:4px;
+}
+.input_username{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 20px;
+  /* padding: 0px 5px; */
 }

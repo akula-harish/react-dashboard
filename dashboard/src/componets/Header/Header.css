@@ -238,8 +238,98 @@
 
   .chatbox_main{
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: 10px;
+    bottom: 0px;
     z-index: 99;
-    padding: 10px;
+    /* padding: 10px; */
+    height: 100%;
   }
+  /* profile data css start here */
+  .profile_head{
+    background-color: var(--background-color);
+    border: 1px solid #ccc;
+    width: 350px;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow:0px 11px 15px -7px rgba(0,0,0,0.2), 
+               0px 24px 38px 3px rgba(0,0,0,0.14),
+               0px 9px 46px 8px rgba(0,0,0,0.12);
+               padding: 20px;
+  }
+.profile_img{
+  border: 1px solid #ccc;
+  width: 80px;
+  height: 80px;
+  margin: 0px auto;
+  border-radius: 50%;
+  margin-top: 20px;
+  position: relative;
+}
+.profile_img >img{
+  border-radius: 50%;
+}
+.caller_id{
+  width: 100%;
+  position: relative;
+  font-size: 0px;
+  padding-bottom: 20px;
+}
+.caption{
+  text-align: left;
+}
+.edit_icon{
+  color: #28c7ac;
+  text-align: end;
+}
+.caller_id >li{
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.caller_icon{
+  text-align: left;
+  color: #9d9fa0f2;
+  font-size: 25px!important;
+}
+.color_name{
+  color: #9d9fa0f2;
+}
+.camera{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: -4px;
+  background-color: #28c7ac;
+  border-radius: 50%;
+  top: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile_content_head{
+  padding-top: 30px;
+}
+.test{
+  font-size: 14px;
+}
+.test_data{
+  text-align: left;
+}
+
+.caller_id{
+  font-size: 0px;
+  position: relative;
+  width: 100%;
+}
+.caller_id>li:nth-child(1){
+  width: 15%;
+}
+.caller_id>li:nth-child(2){
+ width: 75%;
+}
+.caller_id>li:nth-child(3){
+  width: 10%;
+}

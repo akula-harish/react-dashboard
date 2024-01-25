@@ -87,6 +87,10 @@
     color: red!important
 }
 
+.ps-menu-button:hover{
+    background-color: #4454f4!important;
+    color: #fff!important;
+}
 
 
 

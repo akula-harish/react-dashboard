@@ -1,3 +1,4 @@
+@import '../Body/body.css';
 .cont_main{
     width: 100%;
     position: relative;
@@ -22,16 +23,17 @@
     padding: 0px 18px 20px 0px;
 }
 .contact_info{
-    /* border: 1px solid #ccc; */
+    border: 1px solid var(--text-color);
     padding: 20px;
     border-radius: 6px;
-    background-color: #fff;
+    background-color: var(--background-color);
     box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
 .contact_right{
     padding: 20px;
-    background: #fff;
+    background:var(--background-color);
     box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    border: 1px solid var(--text-color);
 }
 .location_icon{
     color: #4454f4;

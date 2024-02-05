@@ -9,18 +9,12 @@
     vertical-align: middle;
     margin: 8px;
 }
-/* .dashboard_main>li:hover{
-    transform: scaleY(1.1);
-    transition: 1s;
-    cursor: pointer;
-} */
 .card_head{
     border: 1px solid #ccc;
     width: 250px;
     padding: 10px;
     border-radius: 8px;
     font-size: 20px;
-    /* background-color: #fff; */
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: var(--text-color);
 }

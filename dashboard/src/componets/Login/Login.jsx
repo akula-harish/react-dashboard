@@ -1,8 +1,8 @@
 import React from 'react'
-import './register.css'
+import "../../componets/Login/login.css"
 import logo from '../../assets/logo.png'
 
-export default function Register() {
+export default function Login() {
   return (
     <div style={{position: 'relative', fontSize: '0px', width: '100%', height: '100vh', background: '#cfe2ff'}}>
         <div className='reg_main'>
@@ -11,17 +11,9 @@ export default function Register() {
                 <li>NiceAdmin</li>
             </ul>
             <div className='reg_form_main'>
-                <h2>Create an Account</h2>
-                <p>Enter your personal details to create account</p>
+                <h2>Login To Your Account</h2>
+                <p>Enter your username & password to login</p>
                 <form style={{paddingTop: '30px'}}>
-                    <ul className='form_group_list'>
-                        <li><label>Your Name: </label></li>
-                        <li><input type="text" placeholder="Enter your name..."/>  </li>
-                    </ul>
-                    <ul className='form_group_list'>
-                        <li><label>Your Email: </label></li>
-                        <li><input type="text" placeholder="Enter your name..."/>  </li>
-                    </ul>
                     <ul className='form_group_list'>
                         <li><label>Username: </label></li>
                         <li><input type="text" placeholder="Enter your name..."/>  </li>
@@ -32,10 +24,12 @@ export default function Register() {
                     </ul>
                     <ul className='agree_btn_list'>
                         <li><input type='checkbox'/></li>
-                        <li><label>I agree and accept the terms and conditions</label></li>
+                        <li><label>Remember me</label></li>
                     </ul>
-                    <input type='submit' value='Create Account'/>
-                    <p>Already have an account? Log in</p>
+                    <input type='submit' value='Login'/>
+                    <div className='create_account_tag'>
+                        <p>Don't have account?<a href='./Register'>Create an account</a></p>
+                    </div>
                 </form>
             </div>
         </div>

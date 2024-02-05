@@ -115,4 +115,5 @@
 .contact_right >textarea{
     margin-top: 20px;
     padding: 5px 15px;
+    width: 100%;
 }

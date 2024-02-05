@@ -18,6 +18,10 @@ let ROUTE_URLS = [
     url:'register',
     component:Register
   },
+  {
+    url:'contact',
+    component:Contact
+  },
 ]
 
 export default function Body() {

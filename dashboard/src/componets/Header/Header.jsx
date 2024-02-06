@@ -5,7 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import ChatIcon from '@mui/icons-material/Chat';
 import img from '../../assets/men.jfif';
-import camera from '../../assets/camera.jpg'
+//import camera from '../../assets/camera.jpg'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import "./Header.css" ;
 import Darkmode from './Darkmode';

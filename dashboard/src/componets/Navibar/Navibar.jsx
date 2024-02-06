@@ -32,7 +32,7 @@ export default function Navibar() {
                 <MenuItem className={classes.menuItem} href='/dashboard' icon = {<GridViewIcon/>}>Dashboard</MenuItem>
                 <SubMenu label = 'Components' className={`${classes.subMenu}menuItem test`} icon = {<LayersIcon/>}>
                     <div className={classes.submenu_list}>
-                        <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Alerts</MenuItem>
+                        <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>} href='./Alert'>Alerts</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Accordian</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Badges</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Buttons</MenuItem>
@@ -41,7 +41,7 @@ export default function Navibar() {
                 </SubMenu>
                 <SubMenu label = 'Forms' className={`${classes.subMenu}menuItem`} icon = {<HistoryEduIcon/>}>
                     <div className={classes.submenu_list}>
-                        <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Alerts</MenuItem>
+                        <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>} href='./Alert'>Alerts</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Accordian</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Badges</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Buttons</MenuItem>
@@ -50,7 +50,7 @@ export default function Navibar() {
                 </SubMenu>
                 <SubMenu label = 'Tabels' className={`${classes.subMenu}menuItem`} icon = {<DescriptionIcon/>}>
                     <div className={classes.submenu_list}>
-                        <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Alerts</MenuItem>
+                        <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>} href='./Alert'>Alerts</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Accordian</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Badges</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Buttons</MenuItem>
@@ -59,7 +59,7 @@ export default function Navibar() {
                 </SubMenu>
                 <SubMenu label = 'Charts' className={`${classes.subMenu}menuItem`} icon = {<PivotTableChartIcon/>}>
                     <div className={classes.submenu_list}>
-                        <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Alerts</MenuItem>
+                        <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>} href='./Alert'>Alerts</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Accordian</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Badges</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Buttons</MenuItem>
@@ -68,7 +68,7 @@ export default function Navibar() {
                 </SubMenu>
                 <SubMenu label = 'Icons' className={`${classes.subMenu}menuItem`} icon = {<EqualizerIcon/>}>
                     <div className={classes.submenu_list}>
-                        <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Alerts</MenuItem>
+                        <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>} href='./Alert'>Alerts</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Accordian</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Badges</MenuItem>
                         <MenuItem icon = {<MediationIcon style={{fontSize: '18px'}}/>}>Buttons</MenuItem>

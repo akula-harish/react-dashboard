@@ -5,7 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import ChatIcon from '@mui/icons-material/Chat';
 import img from '../../assets/men.jfif';
-import camera from '../../assets/camera.jpg'
+//import camera from '../../assets/camera.jpg'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import "./Header.css" ;
 import Darkmode from './Darkmode';
@@ -38,6 +38,19 @@ function Header() {
   const profileFun=()=>{
     setProfile(!profile)
   }  
+  // updateBtn
+  const[userName, setUserName] = useState("Admin");
+  const[toggleInput, setToggleInput] = useState(false);
+  const handleOpenInput = () => {
+    setToggleInput(!toggleInput);
+  }
+  console.log(toggleInput);
+  // about information
+  const[aboutData,setAboutData]=useState("Busy");
+  const[input,setInput]=useState(false);
+  const handleOpenInputData=()=>{
+    setInput(!input)
+  }
   return(
     <>
       <div className='main_header' 
@@ -95,14 +108,18 @@ function Header() {
                       <li>
                         <div className='caption'>
                         <p className='color_name'>Name</p>
-                       <p>Rukmini</p>
+                        {
+                          toggleInput === true ? <div className='edit_input'>
+                            <input type='text' className='input_username' onChange = {(e) =>  setUserName(e.target.value)}/>
+                          </div> :  <h5>{userName}</h5>
+                        }
                         <p className='color_name' style={{fontSize: '12px'}}>Lorem ipsum Lor imb Lorem ipsum</p>
                       </div>
-                    
                       </li>
                      {/*  */}
                      <li>
-                      <div> <EditOutlinedIcon className='edit_icon' /></div> 
+                      <div> <EditOutlinedIcon className='edit_icon' onClick = {handleOpenInput}/> 
+                      </div> 
                       </li>
                     </ul>
                     <ul className='caller_id'>
@@ -114,12 +131,16 @@ function Header() {
                       <li>
                         <div className='caption'>
                         <p className='color_name'>About</p>
-                        <p>Busy</p>
+                        {
+                          input === true ? <div className='edit_input'>
+                            <input type='text' style={{color: '#000'}} onChange = {(e) =>  setAboutData(e.target.value)}/>
+                          </div> :  <h5>{aboutData}</h5>
+                        }
                       </div>
                       </li>
                      <li> 
                       <div>
-                      <EditOutlinedIcon className='edit_icon'/>
+                      <EditOutlinedIcon className='edit_icon' onClick = {handleOpenInputData}/>
                       </div>
                      </li>
                     </ul>
@@ -132,7 +153,7 @@ function Header() {
                       <li>
                         <div className='caption'>
                         <p className='color_name'>Phone</p>
-                        <p>34567899888</p>
+                        <p>+91 9849626300</p>
                       </div>
                       </li>
                       <li>
@@ -162,6 +183,4 @@ function Header() {
   ) 
 
 }
-
-
 export default Header

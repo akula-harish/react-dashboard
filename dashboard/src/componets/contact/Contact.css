@@ -1,0 +1,119 @@
+@import '../Body/body.css';
+.cont_main{
+    width: 100%;
+    position: relative;
+    font-size: 0px;
+    border-bottom: 1px solid #ccc;
+}
+.cont_main >li{
+    width: 50%;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+}
+.list_cont{
+    font-size: 0px;
+    position: relative;
+    width: 100%;
+}
+.list_cont >li{
+    display: inline-block;
+    font-size: 14px;
+    width: 50%;
+    padding: 0px 18px 20px 0px;
+}
+.contact_info{
+    border: 1px solid var(--text-color);
+    padding: 20px;
+    border-radius: 6px;
+    background-color: var(--background-color);
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+}
+.contact_right{
+    padding: 20px;
+    background:var(--background-color);
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    border: 1px solid var(--text-color);
+}
+.location_icon{
+    color: #4454f4;
+    font-size: 50px !important;
+}
+.contact_info >h1{
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.contact_info >p{
+    font-size: 14px;
+    line-height: 24px;
+}
+.contact_header >h2{
+    font-size: 24px;
+    color: #012970;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+.contact_filed{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.contact_filed >input{
+    width: 50%;
+    font-size: 14px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    height: 40px;
+    padding: 5px 15px;
+}
+.contact_right >input{
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    height: 40px;
+    padding: 5px 15px;
+}
+.contact_right{
+    width: 100%;
+}
+.contact_right >button{
+    margin: 0px auto;
+    border: 1px solid #5969f3;
+    height: 45px;
+    padding: 10px 30px;
+    display: flex;
+    border-radius: 4px;
+    background: #5969f3;
+    color: #fff;
+    margin-top: 15px;
+}
+.contact_footer >small >strong{
+    color: #012970;
+}
+.contact_footer {
+    text-align: center;
+    margin-top: 20px;
+}
+.contact_footer >small{
+    display: block;
+    font-size: 16px;
+}
+.footerArrow{
+    text-align: right;
+}
+.arrow_icon{
+    background-color: #4154f1;
+    color: #fff;
+    border-radius: 4px;
+    height: 40px !important;
+    width: 40px !important;
+    padding: 10px;
+}
+.contact_right >textarea{
+    margin-top: 20px;
+    padding: 5px 15px;
+    width: 100%;
+}

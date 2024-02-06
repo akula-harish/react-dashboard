@@ -78,7 +78,7 @@ export default function Navibar() {
                 <h5 style={{paddingLeft: '20px', fontSize: '14px', color: '#899bbd', fontWeight: '600', paddingTop: '10px', paddingBottom: '10px'}}>PAGES</h5>
                 <MenuItem className={classes.menuItem} icon = {<ExtensionIcon/>}>Profile</MenuItem>
                 <MenuItem className={classes.menuItem} icon = {<AccessibilityIcon/>}>F.A.Q</MenuItem>
-                <MenuItem className={classes.menuItem} icon = {<QuestionMarkIcon/>}>Contact</MenuItem>
+                <MenuItem className={classes.menuItem} icon = {<QuestionMarkIcon/>} href='./Contact'>Contact</MenuItem>
                 <MenuItem className={classes.menuItem} icon = {<MailOutlineIcon/>} href='./Register'>Register</MenuItem>
                 <MenuItem className={classes.menuItem} icon = {<HowToRegIcon/>}>Login</MenuItem>
                 <MenuItem className={classes.menuItem} href='/error' icon = {<ExitToAppIcon/>}>Error</MenuItem>

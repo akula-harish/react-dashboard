@@ -1,0 +1,33 @@
+@import '../Body/body.css';
+.error_main{
+    position: relative;
+    width: 100%;
+    font-size: 0px;
+    text-align: center;
+}
+.error_main>h1{
+    font-size: 50px;
+    color: blue;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+.error_main>p{
+    font-size: 16px;
+    padding-bottom: 20px;
+    color: #012970;
+    font-weight: 600;
+}
+.error_main>a{
+    font-size: 16px;
+    border: 1px solid #51678f;
+    background-color: #51678f;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+.error_img{
+    display: block;
+    width: 50%;
+    margin: 0px auto;
+}

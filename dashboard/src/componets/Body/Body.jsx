@@ -6,6 +6,8 @@ import Error from '../Error/Error'
 import Register from '../Register/Register'
 import Contact from '../contact/Contact'
 import Alert from '../Alert/Alert'
+import Login from '../Login/Login'
+
 let ROUTE_URLS = [
   {
     url : 'dashboard',
@@ -25,7 +27,11 @@ let ROUTE_URLS = [
   },
   {
     url:'alert',
-    component:Alert
+    component:Alert 
+  },
+  {
+    url:'login',
+    component:Login
   },
 ]
 

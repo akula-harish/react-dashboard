@@ -2,7 +2,7 @@ import React from 'react'
 
 function Alert() {
   return (
-    <div>
+    <div className='container'>
       <p>alert Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aperiam.</p>
     </div>
   )

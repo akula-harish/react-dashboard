@@ -1,0 +1,20 @@
+@import '../Body/body.css';
+.alert_head{
+    width: 100%;
+    position: relative;
+    font-size: 0px; 
+}
+.alert_head>li{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+.alert_box{
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.test{
+    color: var(--text-color) !important
+}
